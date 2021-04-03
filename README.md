@@ -1,1 +1,1 @@
-This repository is dedicated to creating my programmming Portfolio.
+This repository is dedicated to my programmming Portfolio.
