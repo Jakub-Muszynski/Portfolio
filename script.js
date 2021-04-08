@@ -253,7 +253,6 @@ update();
 		init();
 	}();
 
-
 	//Switch light/dark
 
 	$("#switch").on('click', function () {
