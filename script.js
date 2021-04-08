@@ -119,7 +119,6 @@ class Particle {
         diff = this.radius + this.lineWidth;
         break;}
 
-
     this.x = this.x + this.vx;
     this.y = this.y + this.vy;
 
