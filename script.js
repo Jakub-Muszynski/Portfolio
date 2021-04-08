@@ -139,7 +139,6 @@ class Particle {
     return Math.sqrt(x * x + y * y);
   }}
 
-
 /*
  * Function to clear layer canvas
  * @num:number number of particles
