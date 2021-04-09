@@ -2,7 +2,6 @@ let max_particles = 100;
 let particles = [];
 let frequency = 200;
 
-
 // Popolate particles
 popolate(max_particles);
 
@@ -104,7 +103,6 @@ class Particle {
     this.canvas.fill();
     this.canvas.restore();
   }
-
 
   move() {
     this.progress += this.progress_inc;
