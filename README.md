@@ -1,1 +1,1 @@
-This repository is dedicated to my development Portfolio Portfolio.
+This repository is dedicated to my development Portfolio.
