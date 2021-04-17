@@ -264,6 +264,5 @@ update();
 			$("#switch").addClass("switched");
 		}
 	});
-
 	      
 })(jQuery);
