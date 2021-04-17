@@ -52,6 +52,7 @@ class Particle {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
+	
   render() {
     // Create arc
     let color = this.color;
