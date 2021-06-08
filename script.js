@@ -1,6 +1,6 @@
 let max_particles = 250;
 let particles = [];
-let frequency = 250;
+let frequency = 200;
 
 // Popolate particle
 popolate(max_particles);
