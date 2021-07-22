@@ -1,1 +1,1 @@
-This repository is dedicated to my programming portfoli
+This repository is dedicated to my Programming portfolio
