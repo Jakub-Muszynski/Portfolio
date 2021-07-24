@@ -1,4 +1,4 @@
-let max_particles = 23;
+let max_particles = 230;
 let particles = [];
 let frequency = 200;
 
