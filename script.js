@@ -3,7 +3,7 @@ let particles = [];
 let frequency = 200;
 
 // Popolate particle
-popolate(max_particles);
+popolate(max_particle);
 
 var tela = document.createElement('canvas');
 tela.width = $(window).width();
