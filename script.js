@@ -22,7 +22,7 @@ class Particle {
 
     this.lineWidth = 0.2 + 2.8 * this.random;
 
-    this.speed =  + Math.random() * 3;
+    this.speed =  2 + Math.random() * 3;
 
     this.progress = 0;
     this.progress_inc = this.random > 0.5 ? this.random * (this.speed * 1.5) : this.random * -(this.speed * 1.5);
