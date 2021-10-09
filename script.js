@@ -1,5 +1,5 @@
 let max_particles = 250;
-let particles = [1];
+let particles = [2];
 let frequency = 200;
 
 // Popolate particle
