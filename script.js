@@ -1,8 +1,8 @@
-let max_particles = 250;
+let max_particles = 100;
 let particles = [];
 let frequency = 200;
 
-// Popolate particle
+// Popolate particles
 popolate(max_particles);
 
 var tela = document.createElement('canvas');
@@ -22,7 +22,7 @@ class Particle {
 
     this.lineWidth = 0.2 + 2.8 * this.random;
 
-    this.speed =  2 + Math.random() * 3;
+    this.speed = 2 + Math.random() * 3;
 
     this.progress = 0;
     this.progress_inc = this.random > 0.5 ? this.random * (this.speed * 1.5) : this.random * -(this.speed * 1.5);
@@ -104,6 +104,7 @@ class Particle {
     this.canvas.restore();
   }
 
+
   move() {
     this.progress += this.progress_inc;
     let diff = this.radius;
@@ -117,6 +118,7 @@ class Particle {
       case "empty":
         diff = this.radius + this.lineWidth;
         break;}
+
 
     this.x = this.x + this.vx;
     this.y = this.y + this.vy;
@@ -136,6 +138,7 @@ class Particle {
     let y = Math.abs(v1.y - v2.y);
     return Math.sqrt(x * x + y * y);
   }}
+
 
 /*
  * Function to clear layer canvas
@@ -252,6 +255,7 @@ update();
 		init();
 	}();
 
+
 	//Switch light/dark
 
 	$("#switch").on('click', function () {
@@ -264,5 +268,5 @@ update();
 			$("#switch").addClass("switched");
 		}
 	});
-	      
+
 })(jQuery);

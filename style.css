@@ -4,14 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
 }
-
 a {
 	cursor: pointer;
 }
-
 a:hover {
 	text-decoration: none;
-	
 }
 
 /* #Cursor
@@ -155,7 +152,7 @@ a:hover {
 }
 
 .nav:after {
-	background-color: rgba(9,9,12,1);
+	background-color: #
   background-image: url('');
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -182,7 +179,6 @@ a:hover {
 	margin: 0;
 	z-index: 2;
 }
-
 .nav__list-item {
 	position: relative;
 	display: block;
@@ -399,41 +395,8 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 #switch,
 
-/* #Light
-================================================== */
-}
-body.light .menu-icon__line {
-	background-color: #1f2029;
-}
-body.light .nav:before {
-	background-color: rgba(235, 235, 235,0.4);
-}
-body.light .nav:after {
-	background-color: rgb(246,239,249);
-  box-shadow: 6px 6px 22px rgba(42, 31, 63, 0.1);
-}
-body.light .nav__list-item a{
-	color: rgba(0,0,0,0.6);
-}
-body.light .nav__list-item a:hover{
-	color: #1f2029;
-}
-body.light .nav__list-item.active-nav a{
-	color: #1f2029;
-}
-body.light .switch-wrap h1 {
-	color: #000;
-}
-body.light .switch-wrap p span:nth-child(2):before {
-	opacity: 1;
-	background-color: #000;
-}
-body.light .switch-wrap p span:nth-child(1):before {
-	opacity: 0;
-}
-
 body {
-  background: #;
+  background: ;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arials, sans;
 }
@@ -447,6 +410,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+
+
 }
 
 * {
@@ -468,7 +433,7 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   place-items: center;
-  background: ;
+
 }
 
 .wrapper {
@@ -562,4 +527,153 @@ body {
 .wrapper .pdf:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
+}
+
+article {
+  height: 100vh;
+}
+
+
+
+
+
+
+.btn {
+  /* Clean style */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--button-text-color);
+  cursor: pointer;
+	display: inline-flex;
+	position: absolute;
+	
+
+
+
+  /* Clean style */
+
+  --button-text-color: var(--background-color);
+  --button-text-color-hover: var(--button-background-color);
+  --border-color: #7D8082;
+  --button-background-color: #ece8e1;
+  --highlight-color: #ff4655;
+  --button-inner-border-color: transparent;
+  --button-bits-color: var(--background-color);
+  --button-bits-color-hover: var(--button-background-color);
+
+
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0; left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid var(--border-color);
+  transition: all .15s ease;
+}
+
+.btn::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.btn::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn:active::before,
+.btn:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.btn:active::before {
+  top: 3px;
+}
+
+.btn:active::after {
+  bottom: 3px;
+}
+
+.btn__inner {
+  position: relative;
+  display: block;
+  padding: 20px 30px;
+  background-color: var(--button-background-color);
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+
+.btn__inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: var(--button-bits-color);
+}
+
+.btn__inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0; bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: var(--button-bits-color);
+  transition: all .2s ease;
+}
+
+.btn__slide {
+  display: block;
+  position: absolute;
+  top: 0; bottom: -1px; left: -8px;
+  width: 0;
+  background-color: var(--highlight-color);
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.btn__content {
+  position: relative;
+}
+
+.btn:hover {
+  color: var(--button-text-color-hover);
+}
+
+.btn:hover .btn__slide {
+  width: calc(100% + 15px);
+}
+
+.btn:hover .btn__inner::after {
+  background-color: var(--button-bits-color-hover);
+}
+
+.btn--light {
+  --button-background-color: var(--background-color);
+  --button-text-color: var(--highlight-color);
+  --button-inner-border-color: var(--highlight-color);
+  --button-text-color-hover: #ece8e1;
+  --button-bits-color-hover: #ece8e1;
 }
